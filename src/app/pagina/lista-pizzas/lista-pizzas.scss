@@ -1,0 +1,24 @@
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 25px 10px;
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .catalogo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .catalogo-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+section {
+  max-width: 750px;
+  margin: 25px auto;
+
+  h2 {
+    display: none;
+  }
+
+  form {
+    padding: 20px;
+    background-color: white;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: #444;
+  }
+
+  .form-control {
+    border: 1px solid #555;
+    border-radius: 0;
+    padding: 10px;
+  }
+
+  .text-danger {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .btn-danger {
+    background-color: white;
+    color: #222;
+    border: 1px solid #333;
+    border-radius: 0;
+    padding: 12px 25px;
+
+    &:hover {
+      background-color: #dc3545;
+      color: white;
+    }
+  }
+}

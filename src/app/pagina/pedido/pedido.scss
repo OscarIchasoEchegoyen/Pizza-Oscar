@@ -1,0 +1,28 @@
+.pedido {
+  max-width: 750px;
+  margin: 35px auto;
+
+  .lista-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fila-pedido {
+    border: 1px solid #444;
+    padding: 20px;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color: white;
+  }
+
+  .total-pedido {
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}

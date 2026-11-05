@@ -1,0 +1,18 @@
+<section id="pizzas">
+  <div class="catalogo-grid">
+
+    @for (pizza of listaFiltrada; track pizza.id) {
+      <app-card-pizza
+        [pizza]="pizza"
+        (pizzaAgregada)="agregarPizza($event)">
+      </app-card-pizza>
+    }
+
+  </div>
+
+  @if (listaFiltrada.length === 0) {
+    <p class="sin-resultados">
+      No se han encontrado pizzas con esos ingredientes.
+    </p>
+  }
+</section>

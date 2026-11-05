@@ -1,0 +1,30 @@
+<nav class="barra-navegacion">
+  <div class="navegacion-izquierda">
+    <span class="logo">Menu</span>
+
+    <button
+      type="button"
+      (click)="cambiarPagina('listado')">
+      Listado
+    </button>
+
+    <span class="separador">|</span>
+
+    <button
+      type="button"
+      (click)="cambiarPagina('pedido')">
+      Pedido
+    </button>
+  </div>
+
+  <h1>PIZZA OSCAR</h1>
+
+  @if (mostrarBuscador) {
+    <div class="buscador">
+      <input
+        type="text"
+        placeholder="⌕ Ingredientes"
+        (input)="filtrarIngredientes($event)">
+    </div>
+  }
+</nav>

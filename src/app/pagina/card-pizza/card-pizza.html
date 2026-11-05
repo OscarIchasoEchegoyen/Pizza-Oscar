@@ -1,0 +1,49 @@
+
+<div class="card h-100">
+
+  <img
+    [src]="pizza.imagen"
+    class="card-img-top"
+    [alt]="pizza.nombre">
+
+  <div class="card-body">
+
+    <h5 class="card-title">
+      {{ pizza.nombre }}
+    </h5>
+
+    <p class="card-text">
+      {{ pizza.ingredientes }}
+    </p>
+
+    <p class="precio">
+      {{ pizza.precio }} €
+    </p>
+
+    <div class="formulario-pedido">
+
+      <label class="form-label">
+        Cantidad de pizzas
+      </label>
+
+      <input
+        type="number"
+        class="form-control mb-2"
+        min="1"
+        [value]="cantidad"
+        (input)="cambiarCantidad($event)">
+
+      <button
+        type="button"
+        class="btn btn-danger w-100"
+        (click)="agregarAlPedido()">
+
+        Añadir al pedido
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
